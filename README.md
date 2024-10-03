@@ -1,7 +1,7 @@
 ocetrac-dask
 ==============================
 
-`Ocetrac-dask` is a Python 3.6+ package based on [ocetrack](https://github.com/ocetrac/ocetrac) which labels and tracks unique geospatial features from gridded datasets. This version has been rewritten to accept larger-than-memory spatio-temporal datasets and process them in parallel using [dask](https://dask.org/). It avoids loop-carried dependencies in time, keeps dask arrays distributed in memory throughout, and leverages the [dask-image](https://github.com/dask/dask-image) library. These modifications has allowed preliminary scaling to 40 years of _daily_ data on 1024 cores. 
+`Ocetrac-dask` is a Python 3.6+ package based on [ocetrac](https://github.com/ocetrac/ocetrac) which labels and tracks unique geospatial features from gridded datasets. This version has been rewritten to accept larger-than-memory spatio-temporal datasets and process them in parallel using [dask](https://dask.org/). It avoids loop-carried dependencies in time, keeps dask arrays distributed in memory throughout, and leverages the [dask-image](https://github.com/dask/dask-image) library. These modifications has allowed preliminary scaling to 40 years of _daily_ data on 1024 cores. 
 
 These major modifications to support long daily timeseries of global 3D data at increasingly high spatial resolution has been necessitated by the [EERIE project](https://eerie-project.eu).
 
